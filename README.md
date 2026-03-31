@@ -1,169 +1,79 @@
-# Student-Performance-Prediction
-# Student Performance Prediction using Machine Learning
+# Student Final Marks Predictor
 
-## Project Overview
+College Project | Academic Year 2025–26  
 
-This project predicts a student's final performance (marks) based on key academic factors such as study hours, attendance percentage, and previous marks. The system uses a machine learning model to analyze patterns in the data and generate predictions.
+## Student Details
+Name: M.Ganesh Kumar
+Reg No: 25BAI10489
+Course: CSA-2001
 
-The objective of this project is to demonstrate the practical application of machine learning techniques in the education domain.
+
+---
+
+## Overview
+The Student Final Marks Predictor is a Machine Learning application built using Python and Scikit-learn. It predicts a student’s final marks based on study habits and past academic performance.  
+
+This project uses a Linear Regression model to find the relationship between study hours, attendance, previous marks, and final marks. It is a practical implementation of supervised learning for academic performance analysis.  
 
 ---
 
 ## Features
-
-* Predict student final marks based on input parameters
-* Uses a simple and efficient machine learning model
-* Command-line based execution
-* Easy to understand and modify
-
----
-
-## Machine Learning Algorithm Used
-
-* Linear Regression
-
-Linear Regression is used to model the relationship between input features (study hours, attendance, previous marks) and the output (final marks).
+- Predictive Analysis: Estimates final marks based on input values  
+- Trained Model: Uses dataset (data.csv) for training and testing  
+- User-Friendly CLI: Simple command-line interface for predictions  
+- Data Handling: Uses pandas for efficient data processing  
 
 ---
 
-## Technologies Used
+## Technical Stack
+Language: Python  
 
-* Python
-* Pandas
-* Scikit-learn
-
----
-
-## Project Structure
-
-```
-student-performance-prediction/
-│
-├── data.csv              # Dataset
-├── model.py              # Model training code
-├── main.py               # Main execution file
-├── requirements.txt      # Dependencies
-└── README.md             # Project documentation
-```
+Libraries Used:  
+pandas for data manipulation  
+scikit-learn for machine learning model  
+numpy for numerical operations  
 
 ---
 
-## Installation and Setup
+## Dataset Structure
+The model uses a dataset file named data.csv with the following columns:
 
-### Step 1: Clone the Repository
-
-```
-git clone https://github.com/your-username/student-performance-prediction.git
-cd student-performance-prediction
-```
-
-### Step 2: Install Dependencies
-
-```
-pip install -r requirements.txt
-```
+- hours: Number of study hours  
+- attendance: Attendance percentage  
+- previous_marks: Marks from previous exams  
+- final_marks: Target value to be predicted  
 
 ---
 
-## How to Run the Project
+## How to Run
+1. Clone the repository  
+   git clone https://github.com/your-username/student-marks-predictor.git  
 
-Run the following command in the terminal:
+2. Install required libraries  
+   pip install pandas scikit-learn  
 
-```
-python main.py
-```
+3. Ensure data.csv is in the same folder  
 
----
-
-## Input Example
-
-Enter student details when prompted:
-
-```
-Study Hours: 5
-Attendance (%): 75
-Previous Marks: 65
-```
+4. Run the script  
+   python predictor.py  
 
 ---
 
-## Output Example
-
-```
-Predicted Final Marks: 68.50
-```
-
----
-
-## Model Details
-
-* The dataset is split into training and testing sets
-* The model is trained using Linear Regression
-* Predictions are made based on learned relationships
+## Logic and Methodology
+- Dataset is split into training (80%) and testing (20%) using train_test_split  
+- LinearRegression model is trained on the dataset  
+- User inputs are taken for prediction  
+- Model outputs predicted final marks  
 
 ---
 
-## Dataset Description
-
-The dataset contains the following features:
-
-* hours → Number of hours studied
-* attendance → Attendance percentage
-* previous_marks → Marks obtained previously
-* final_marks → Target variable (predicted output)
-
-The dataset used in this project is synthetically generated based on realistic academic trends.
+## Conclusion
+This project shows how machine learning can be used to analyze and predict student performance. It helps understand the impact of study habits on final results.  
 
 ---
 
-## Evaluation
+## Future Enhancements
+- Add graphical user interface (GUI)  
+- Improve dataset with more features  
+- Deploy as a web application
 
-The model performance can be evaluated using:
-
-```
-model.score(X_test, y_test)
-```
-
----
-
-## Assumptions
-
-* Higher study hours generally lead to better performance
-* Better attendance improves final marks
-* Previous academic performance influences future results
-
----
-
-## Future Improvements
-
-* Add more features such as sleep hours and assignment scores
-* Implement advanced models such as Decision Tree and Random Forest
-* Add graphical visualization
-* Build a web interface using Flask or Streamlit
-
----
-
-## How to Use
-
-1. Install dependencies
-2. Run the project
-3. Enter input values
-4. View predicted output
-
----
-
-## Contribution
-
-This project is developed as part of an academic submission. Contributions are not required but suggestions are welcome.
-
----
-
-## License
-
-This project is for educational purposes only.
-
----
-
-## Acknowledgement
-
-This project is created as part of the BYOP (Bring Your Own Project) submission for the AI/ML flipped course.
